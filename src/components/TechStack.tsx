@@ -54,7 +54,7 @@ const container = {
     opacity: 1,
     transition: { staggerChildren: 0.03, delayChildren: 0.1 }
   }
-};
+} as const;
 
 const item = {
   hidden: { opacity: 0, y: 30, scale: 0.85 },
@@ -62,7 +62,7 @@ const item = {
     opacity: 1, y: 0, scale: 1,
     transition: { type: "spring", stiffness: 200, damping: 15 }
   }
-};
+} as const;
 
 export const TechStack: React.FC = () => {
   return (
